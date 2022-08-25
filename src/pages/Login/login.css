@@ -1,0 +1,79 @@
+.sign{
+   height: 100vh;
+}
+
+.sign a{
+   margin-bottom: 21px;
+   text-decoration: none;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 15px;
+   color: #4ab2b2;
+}
+
+.sign__title{
+   margin: 0;
+   font-weight: 900;
+   font-size: 36px;
+   line-height: 51px;
+   color: #000000;
+}
+
+.sign__txt{
+   display: inline-block;
+   margin-bottom: 21px;
+   margin-right: 6px;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 15px;
+   color: #000000;
+}
+
+.sign__form{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.sign__form input{
+   width: 330px;
+   margin-bottom: 16px;
+   padding: 16px 29px 10px 29px;
+   background: #FFFFFF;
+   border: 1px solid #B4B4BB;
+   border-radius: 10px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #AAAAAA;
+}
+
+.sign__form button{
+   width: 328px;
+   padding: 5px;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 36px;
+   text-align: center;
+   color: #FFFFFF;
+   background: #152540;
+   border: none;
+   border-radius: 99px;
+}
+
+.sign_left{
+   height: 100vh;
+   padding-top: 75px;
+   text-align: center;
+   background-color: rgba(201, 172, 140, 0.93);
+}
+
+.sign_content{
+   padding-top: 75px;
+   text-align: center;
+}
+
+.sign_contet{
+   padding-top: 200px;
+   text-align: center;
+}

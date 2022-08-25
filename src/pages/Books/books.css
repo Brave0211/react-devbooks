@@ -1,0 +1,41 @@
+
+.book{
+   padding-bottom: 200px;
+   background-color: #191919;
+}
+
+.book__title{
+   margin-top: 0;
+   padding-bottom: 31px;
+   text-align: center;
+   font-weight: 400;
+   font-size: 31px;
+   line-height: 34px;
+   color: #C9AC8C;
+}
+
+.book__list{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   margin-bottom: 51px;
+   padding: 0;
+   list-style: none;
+}
+
+.book__item{
+   margin-right: 69px;
+}
+
+.book__item a{
+   text-decoration: none;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 20px;
+   color: #fff;
+}
+
+.book__item a:hover{
+   color: #846b52;
+}

@@ -1,0 +1,38 @@
+.author{
+   position: relative;
+   z-index: 1;
+   width: 45%;
+   padding: 47px 40px;
+   background-image: linear-gradient(263.94deg, #161616 0%, #1E1E1E 98.06%);
+   border-radius: 15px;
+}
+
+.author::before{
+   position: absolute;
+   top: -15px;
+   left: 25px;
+   width: 55px;
+   height: 55px;
+   background-image: url("../../assets/images/quote.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   content: "";
+}
+
+.author p{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   color: #FFFFFF;
+}
+
+.img-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+.img-wrapper img{
+   display: block;
+   margin-right: 15px;
+}

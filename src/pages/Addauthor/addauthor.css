@@ -1,0 +1,84 @@
+
+
+.form form{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.form form input{
+   width: 330px;
+   margin-bottom: 16px;
+   padding: 16px 29px 10px 29px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #AAAAAA;
+   background-color: #FFFFFF;
+   border: 1px solid #B4B4BB;
+   border-radius: 10px;
+}
+
+.form form select{
+   width: 330px;
+   margin-bottom: 16px;
+   padding: 16px 29px 10px 29px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   background-color: #FFFFFF;
+   border: 1px solid #B4B4BB;
+   border-radius: 10px;
+}
+
+.form form textarea{
+   width: 330px;
+   margin-bottom: 16px;
+   padding: 16px 29px 10px 29px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #AAAAAA;
+   background-color: #FFFFFF;
+   border: 1px solid #B4B4BB;
+   border-radius: 10px;
+}
+
+.form h1 {
+   margin-bottom: 16px;
+   text-align: center;
+   font-weight: 900;
+   font-size: 36px;
+   line-height: 51px;
+   color: #000000;
+}
+
+.form_img{
+   position: absolute;
+   z-index: 1;
+   left: 180px;
+   bottom: 100px;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 36px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   color: #FFFFFF;
+   background-color: #152540;
+   border: none;
+   border-radius: 99px;
+}
+
+.form button{
+   width: 330px;
+   padding: 5px 20px;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 36px;
+   text-align: center;
+   color: #FFFFFF;
+   background-color: #152540;
+   border: none;
+   border-radius: 99px;
+}

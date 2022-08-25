@@ -1,0 +1,48 @@
+.singlebook{
+   padding-top: 58px;
+   padding-bottom: 167px;
+   background-color: #191919;
+}
+
+.singlebook_img{
+   width: 519px;
+   height: 810px;
+   border-radius: 15px;
+}
+
+.singlebook_list{
+   display: flex;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.singlebook_item{
+   margin-right: 69px;
+   margin-bottom: 51px;
+}
+
+.alink{
+   text-decoration: none;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 20px;
+   color: rgba(255, 255, 255, 0.6);
+}
+
+.singlebook_link{
+   text-decoration: none;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 20px;
+   color: #C9AC8C;
+}
+
+.you-love{
+   display: inline-block;
+   font-weight: 400;
+   font-size: 25px;
+   line-height: 25px;
+   color: #C9AC8C;
+}

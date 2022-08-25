@@ -1,0 +1,31 @@
+.books__item{
+   width: 173px;
+   margin-right: 43px;
+   text-align: center;
+   overflow: hidden;
+   background-image: linear-gradient(209.09deg, #191919 -1.68%, #212121 135.36%);
+   /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802); */
+   border-radius: 15px;
+}
+
+.books__item a{
+   text-decoration: none;
+   color: #C9AC8C;
+}
+
+.books__item a:hover{
+   color: #C9AC8C;
+}
+
+.books__item img {
+   width: 100%;
+   margin-bottom: 12px;
+   border-radius: 15px;
+}
+
+.books__item-txt{
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 22px;
+   text-align: center;
+}

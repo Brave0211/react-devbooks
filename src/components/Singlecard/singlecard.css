@@ -1,0 +1,47 @@
+.singlecard-img {
+   width: 100%;
+   height: 779px;
+   display: block;
+   margin-bottom: 40px;
+   border-radius: 0px 50px 50px 0px;
+}
+
+.single_list{
+   display: flex;
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   background-color: #191919;
+}
+
+.single_list li{
+   margin-right: 32px;
+}
+
+.single_txt{
+   display: block;
+   font-weight: 300;
+   font-size: 12px;
+   line-height: 144.4%;
+   color: rgba(255, 255, 255, 0.6);
+}
+
+.single_list p{
+   margin: 0;
+   font-weight: 400;
+   font-size: 39px;
+   line-height: 144.4%;
+   color: #C9AC8C;
+}
+
+.throw{
+   width: 13px;
+   height: 7px;
+   display: block;
+   margin-top: 15px;
+   font-weight: 400;
+   font-size: 39px;
+   line-height: 144.4%;
+   color: #C9AC8C;
+}

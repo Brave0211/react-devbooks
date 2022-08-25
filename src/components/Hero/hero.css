@@ -1,0 +1,22 @@
+.hero{
+   padding-top: 54px;
+   padding-bottom: 148px;
+   background-color: #191919;
+}
+
+.hero__container{
+   padding: 55px 86px 111px 86px;
+   background-image: url("../../assets/images/hero-bg.png");
+   background-size: cover;
+   border-radius: 21px;
+}
+
+.hero__container h1{
+   width: 337px;
+   margin: 0;
+   margin-left: 86px;
+   font-weight: 400;
+   font-size: 61px;
+   line-height: 67px;
+   color: #C9AC8C;
+}

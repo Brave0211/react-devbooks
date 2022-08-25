@@ -1,0 +1,63 @@
+.singleinfo-title{
+   margin-top: 53px;
+   margin-bottom: 20px;
+   font-weight: 400;
+   font-size: 48px;
+   line-height: 53px;
+   color: #C9AC8C;
+}
+
+.singleinfo-desc{
+   margin: 0;
+   margin-bottom: 31px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 144.4%;
+   color: rgba(255, 255, 255, 0.8);
+}
+
+.singleinfo-titl{
+   margin: 0;
+   margin-bottom: 7px;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 22px;
+   color: #C9AC8C;
+}
+
+.singleinfo-titl::before{
+   content: "";
+   display: inline-block;
+   width: 14px;
+   height: 20px;
+   margin-right: 10px;
+   vertical-align: middle;
+   background-image: url("../../assets/images/Vector.svg");
+   background-size: cover;
+}
+
+.singleinfo-txt{
+   margin: 0;
+   margin-bottom: 53px;
+   padding-left: 25px;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 154.9%;
+   color: #FFFFFF;
+}
+
+.singleinfo-text{
+   font-weight: 400;
+   font-size: 31px;
+   line-height: 34px;
+   text-align: center;
+   color: #C9AC8C;
+}
+
+.singleinfo-link{
+   text-decoration: none;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 16px;
+   color: #fff;
+}

@@ -4,8 +4,12 @@ import { useParams, NavLink, Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Book, Bookcard } from "../../components";
+import { lang } from "../../lang/lang"
+import { LangContext } from "../../context/LangContext"
+import { useContext } from "react"
 
 export const Singlebook = () => {
+  const{lang:til} = useContext(LangContext)
   const { token } = useAuth();
   const { id } = useParams();
   const [book, setBook] = useState("");
@@ -61,7 +65,7 @@ export const Singlebook = () => {
                 isActive ? "singlebook_link" : "alink"
               }
             >
-              Muallif haqida
+              {lang[til].singlebook.about}
             </NavLink>
           </li>
           <li className="singlebook_item">
@@ -71,7 +75,7 @@ export const Singlebook = () => {
                 isActive ? "singlebook_link" : "alink"
               }
             >
-              Kitobdan iqtiboslar
+              {lang[til].singlebook.quotes}
             </NavLink>
           </li>
           <li className="singlebook_item">
@@ -81,7 +85,7 @@ export const Singlebook = () => {
                 isActive ? "singlebook_link" : "alink"
               }
             >
-              Kitobxonlar taqrizi
+              {lang[til].singlebook.review}
             </NavLink>
           </li>
         </ul>
@@ -97,9 +101,9 @@ export const Singlebook = () => {
           marginBottom: "66px",
         }}
       >
-        <span className="you-love">Sizga yoqishi mumkin</span>
+        <span className="you-love">{lang[til].singlebook.like}</span>
         <NavLink className="singleinfo-link" to="/kitoblar">
-          Barchasini ko’rish
+        {lang[til].singlebook.all}
         </NavLink>
       </div>
       {novel.length && (

@@ -54,20 +54,27 @@
 }
 
 .form_img{
+   width: 330px;
    position: absolute;
    z-index: 1;
    left: 180px;
    bottom: 100px;
+   padding: 10px 29px 10px 29px;
    font-weight: 500;
    font-size: 18px;
    line-height: 36px;
    display: flex;
+   justify-content: center;
    align-items: center;
-   text-align: center;
    color: #FFFFFF;
    background-color: #152540;
    border: none;
+   cursor: pointer;
    border-radius: 99px;
+}
+
+.form_image{
+   display: none;
 }
 
 .form button{

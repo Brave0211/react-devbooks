@@ -1,6 +1,7 @@
 .books__item{
    width: 173px;
    margin-right: 43px;
+   margin-bottom: 40px;
    text-align: center;
    overflow: hidden;
    background-image: linear-gradient(209.09deg, #191919 -1.68%, #212121 135.36%);

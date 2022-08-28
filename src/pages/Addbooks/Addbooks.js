@@ -2,8 +2,12 @@ import "./addbooks.css";
 import axios from "axios";
 import { useAuth } from "../../hooks/useAuth";
 import { useEffect, useState } from "react";
+import { lang } from "../../lang/lang"
+import { LangContext } from "../../context/LangContext"
+import { useContext } from "react"
 
 export const Addbooks = () => {
+  const{lang:til} = useContext(LangContext)
   const { token } = useAuth();
   const [dataId, setDataId] = useState(1);
   const [data, setData] = useState([]);
@@ -55,24 +59,43 @@ export const Addbooks = () => {
       </div>
       <div className="col-6">
         <div className="form">
-          <h1>Add books</h1>
+          <h1>{lang[til].addbook.add}</h1>
           <form onSubmit={handleAddBooks}>
+            <label className="form_img">
+              {lang[til].addbook.img}
+              <input
+                className="form_image"
+                type="file"
+                name="image"
+                placeholder="Upload image"
+                aria-label="add image"
+              />
+            </label>
             <input
-              className="form_img"
-              type="file"
-              name="image"
-              placeholder="Upload image"
-              aria-label="add image"
+              type="text"
+              name="title"
+              placeholder={lang[til].addbook.title}
             />
-            <input type="text" name="title" placeholder="Title" />
-            <input type="number" name="page" placeholder="page" />
-            <input type="number" name="year" placeholder="Year" />
-            <input type="number" name="price" placeholder="Price" />
+            <input
+              type="number"
+              name="page"
+              placeholder={lang[til].addbook.page}
+            />
+            <input
+              type="number"
+              name="year"
+              placeholder={lang[til].addbook.year}
+            />
+            <input
+              type="number"
+              name="price"
+              placeholder={lang[til].addbook.price}
+            />
             <select name="genre_id" onClick={selectClick}>
-              <option value="1">Temuriylar davri</option>
-              <option value="2">Jadid adabiyoti</option>
-              <option value="3">Sovet Davri</option>
-              <option value="4">Mustaqillik davri</option>
+              <option value="1">{lang[til].main.period}</option>
+              <option value="2">{lang[til].main.literature}</option>
+              <option value="3">{lang[til].main.era}</option>
+              <option value="4">{lang[til].main.independence}</option>
             </select>
             <select name="author_id">
               {data.length &&
@@ -85,9 +108,9 @@ export const Addbooks = () => {
             <textarea
               type="text"
               name="description"
-              placeholder="Description"
+              placeholder={lang[til].addbook.desc}
             />
-            <button type="submit">Create</button>
+            <button type="submit">{lang[til].addbook.create}</button>
           </form>
         </div>
       </div>

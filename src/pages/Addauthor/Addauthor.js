@@ -1,10 +1,13 @@
 import "./addauthor.css";
 import axios from "axios";
 import { useAuth } from "../../hooks/useAuth";
+import { lang } from "../../lang/lang";
+import { LangContext } from "../../context/LangContext";
+import { useContext } from "react";
 
 export const Addauthor = () => {
   const { token } = useAuth();
-
+  const { lang: til } = useContext(LangContext);
   const handleAddAuthor = (evt) => {
     evt.preventDefault();
     const formData = new FormData();
@@ -44,36 +47,47 @@ export const Addauthor = () => {
       </div>
       <div className="col-6">
         <div className="form">
-          <h1>Add author</h1>
+          <h1>{lang[til].addauthor.add}</h1>
           <form onSubmit={handleAddAuthor}>
+            <label className="form_img">
+              {lang[til].addauthor.img}
+              <input
+                className="form_image"
+                type="file"
+                name="image"
+                placeholder="Upload image"
+                aria-label="add image"
+              />
+            </label>
             <input
-              className="form_img"
-              type="file"
-              name="image"
-              placeholder="Upload image"
-              aria-label="add image"
+              type="text"
+              name="first_name"
+              placeholder={lang[til].addauthor.first}
             />
-            <input type="text" name="first_name" placeholder="First name" />
-            <input type="text" name="last_name" placeholder="Last name" />
+            <input
+              type="text"
+              name="last_name"
+              placeholder={lang[til].addauthor.last}
+            />
             <input
               type="number"
               name="date_of_birth"
-              placeholder="Date of birth"
+              placeholder={lang[til].addauthor.birth}
             />
             <input
               type="number"
               name="date_of_death"
-              placeholder="Date of death"
+              placeholder={lang[til].addauthor.death}
             />
             <select name="genre_id">
-              <option value="1">Temuriylar davri</option>
-              <option value="2">Jadid adabiyoti</option>
-              <option value="3">Sovet Davri</option>
-              <option value="4">Mustaqillik davri</option>
+              <option value="1">{lang[til].main.period}</option>
+              <option value="2">{lang[til].main.literature}</option>
+              <option value="3">{lang[til].main.era}</option>
+              <option value="4">{lang[til].main.independence}</option>
             </select>
             <input type="text" name="country" placeholder="Country" />
             <textarea type="text" name="bio" placeholder="Bio" />
-            <button type="submit">Create</button>
+            <button type="submit">{lang[til].addauthor.create}</button>
           </form>
         </div>
       </div>

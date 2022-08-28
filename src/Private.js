@@ -16,7 +16,7 @@ import {
   Bookm,
   Singlebook,
 } from "./pages";
-import { Author } from "./components";
+import { Author, My, Payment, Security } from "./components";
 
 export const Private = () => {
   return (
@@ -24,7 +24,11 @@ export const Private = () => {
       <Routes>
           <Route path="/addauthor" element={<Addauthor/>} />
           <Route path="/addbooks" element={<Addbooks/>} />
-          <Route path="/settings" element={<Settings />} />
+          <Route path="/settings" element={<Settings />}>
+            <Route index element={<My/>}/>
+            <Route path="security" element={<Security/>}/>
+            <Route path="payment" element={<Payment/>} />
+          </Route>
           <Route path="/*" element={<Home />}>
             <Route index element={<Temur />} />
             <Route path="jadid" element={<Jadid />} />

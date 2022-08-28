@@ -1,0 +1,125 @@
+.row{
+   position: relative;
+   z-index: 1;
+}
+
+#dark .row{
+   background-color: #333;
+}
+
+.my_btn{
+   position: absolute;
+   z-index: 1;
+   top: 185px;
+   left: 220px;
+   padding: 8px 9px 9px 8px;
+   background-color: #F3F6F9;
+   border: none;
+   border-radius: 8px;
+}
+
+.my_btn-img{
+   display: inline-block;
+   width: 59px;
+   height: 43px;
+   margin-top: 133px;
+   margin-left: -55px;
+   padding: 9px 13px;
+   background-color: #F3F6F9;
+   border-radius: 8px;
+}
+
+.my_title{
+   margin-top: 46px;
+   margin-bottom: 32px;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 27px;
+   color: #212121;
+}
+
+.my_form{
+   display: flex;
+   flex-direction: column;
+}
+
+.my_label{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 43px;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 20px;
+   color: #464E5F;
+}
+
+.my_input{
+   width: 708px;
+   margin-top: 7px;
+   margin-bottom: 3px;
+   padding: 12px 20px;
+   background-color: #F3F6F9;
+   border: none;
+   border-radius: 4px;
+}
+
+.fname::after{
+   display: block;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 18px;
+   color: #B5B5C3;
+   opacity: 0.8;
+   content: "Please enter your first name.";
+}
+
+.lname::after{
+   display: block;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 18px;
+   color: #B5B5C3;
+   opacity: 0.8;
+   content: "Please enter your last name.";
+}
+
+.phone::after{
+   display: block;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 18px;
+   color: #B5B5C3;
+   opacity: 0.8;
+   content: "Please enter your phone number.";
+}
+
+.my_form-btn{
+   width: 142px;
+   position: relative;
+   margin-top: 44px;
+   margin-left: auto;
+   margin-right: 237px;
+   padding: 12px 20px 11px 26px;
+   font-weight: 600;
+   font-size: 13px;
+   line-height: 20px;
+   color: #FFFFFF;
+   background-color: #152540;
+   border: none;
+   border-radius: 4px;
+}
+
+.my_form-btn::before{
+   width: 708px;
+   height: 2px;
+   position: absolute;
+   top: -40px;
+   left: -567px;
+   color: #ECF0F3;
+   background-color: #ECF0F3;
+   content: "";
+}
+
+.my_img{
+   border-radius: 50%;
+}
